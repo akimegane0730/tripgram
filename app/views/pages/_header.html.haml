@@ -1,0 +1,14 @@
+.header
+  .header__box
+    .header__box__title
+      = link_to "Tripgram", root_path
+    .header__box__first
+      .header__box__first__text Search
+      .header__box__first__search
+        = link_to "search", "#"
+    .header__box__second
+      .header__box__second__post Post
+      .header__box__second__user
+        = icon("fas", "user-cog", class: "user-icon")
+        -# = fa_icon 'home', class: 'icon'
+        
