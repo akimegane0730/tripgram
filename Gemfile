@@ -64,3 +64,4 @@ gem 'font-awesome-sass', '5.3.1'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'devise'

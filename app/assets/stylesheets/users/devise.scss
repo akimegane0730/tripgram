@@ -1,0 +1,46 @@
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 100px 75px 0;
+  text-align: center;
+}
+h2 {
+  font-family: cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.form-wrap{
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.form-control {
+  border: 1px solid #dcdfe6;
+  font-size: inherit;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 200px;
+  padding-left: 8px;
+}
+
+.devise-link {
+  text-align: center;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  width: 200px;
+  height: 40px;
+  background: rgb(0, 225, 255);
+  color: white;
+}
+.devise-link a{
+  text-decoration: none;
+  color: blue;
+}
