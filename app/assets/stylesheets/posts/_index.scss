@@ -1,0 +1,40 @@
+.name-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.main-index {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+}
+
+.main-index__box {
+  width: 30%;
+  height: 300px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.main-index__box__img {
+  height: 250px;
+  width: 100%;
+  background-color: blue;
+}
+
+.main-index__box__title {
+  height: 50px;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+}
+
+.main-index__box__title__icon {
+  height: 50px;
+  width: 20%;
+}
+
+.main-index__box__title__locate {
+  height: 50px;
+  width: 80%;
+}
