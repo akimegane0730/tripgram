@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   root "pages#index"
   
   resources :users, only: [:show]
-  resources :posts, only: [:index, :show]
+  resources :posts, only: [:new, :create] do
+    resources :photos, only: [:create]
+  end
 end
