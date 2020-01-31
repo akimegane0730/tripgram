@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  # サインイン済みユーザーのみにアクセス許可をするdeviseが持ってるヘルパーメソッド
+  before_action :authenticate_user!
   def index
   end
 

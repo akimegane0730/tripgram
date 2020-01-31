@@ -24,4 +24,6 @@
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
+# imageの保存をgithubの管理下から外す
 /config/master.key
+public/uploads/*
