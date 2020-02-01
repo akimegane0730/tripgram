@@ -23,6 +23,7 @@
       display: flex;
       // line-height: 13vh;
       margin-right: 15vw;
+      align-items: center;
 
       &__text {
         background-color: white;
@@ -30,32 +31,36 @@
         height: 3vh;
         width: 12vw;
         margin-right: 2vw;
-        // line-height: 100px;
+        
       }
 
       &__search {
         display: block;
         background-color: blue;
-        width: 5vw;
-        height: 5vh;
-        line-height: 100px;
+        width: 60px;
+        height: 30px;
       }
 
+      &__search a{
+        display: block;
+        color: white;
+        width: 60px;
+        height: 30px;
+      }
     }
 
     &__second {
-      height: 40px;
-      
+      display: flex;
+      align-items: center;
 
       &__post {
         height: 40px;
         width: 40px;
         background-color: blue;
-        line-height: 100px;
       }
 
       &__user {
-
+        font-size: 2rem;
       }
     }
   }
