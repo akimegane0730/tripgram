@@ -1,9 +1,14 @@
 .show
   .show-bar
     .show-bar__img
-    .show-bar__user-info
-      .show-bar__user-info__name Name
-      .show-bar__user-info__email aaa@gmaol
-    .show-bar__option
-      .show-bar__option__profile プロフィールを編集
-      .show-bar__option__setting icon
+      .show-bar__img__name 
+        = "#{current_user.nickname}"
+    .show-bar__post 
+      = link_to "3投稿", "#"
+    .show-bar__follow 
+      = link_to "160follow", "#"
+    .show-bar__followr 
+      = link_to "100followr", "#"
+  .show-bar__edit
+    = link_to "プロフィールを編集", "#", class: "show-bar__edit"
+    

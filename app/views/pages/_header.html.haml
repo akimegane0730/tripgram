@@ -4,11 +4,12 @@
       = link_to "Tripgram", root_path
     .header__box__first
       .header__box__first__text Search
-      .header__box__first__search
-        = link_to "search", "#"
+      /.header__box__first__search
+      = link_to "search", "#", class: "header__box__first__search"
     .header__box__second
-      .header__box__second__post Post
+      .header__box__second__post 
+        = link_to "投稿", new_post_path
       .header__box__second__user
-        = icon("fas", "user-cog", class: "user-icon")
-        -# = fa_icon 'home', class: 'icon'
+        = icon('fas', 'user-cog', class: 'header__box__second__user')
+        
         
