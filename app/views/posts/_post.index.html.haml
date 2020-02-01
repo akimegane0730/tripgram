@@ -1,20 +1,25 @@
-.name-title Nameさんの投稿一覧
-.main-index
-  .main-index__box
-    .main-index__box__img
-    .main-index__box__title
-      .main-index__box__title__icon
-        = icon('fas', 'map-marker-alt',class: "mapicon")
-      .main-index__box__title__locate 東京都
-  .main-index__box
-    .main-index__box__img
-    .main-index__box__title
-      .main-index__box__title__icon
-        = icon('fas', 'map-marker-alt',class: "mapicon")
-      .main-index__box__title__locate 北海道
-  .main-index__box
-    .main-index__box__img
-    .main-index__box__title
-      .main-index__box__title__icon
-        = icon('fas', 'map-marker-alt',class: "mapicon")
-      .main-index__box__title__locate 新潟県
+-# .name-title Nameさんの投稿一覧
+-# .main-index
+-#   .main-index__box
+-#     .main-index__box__img
+-#     .main-index__box__title
+-#       .main-index__box__title__icon
+-#         = icon('fas', 'map-marker-alt',class: "mapicon")
+-#       .main-index__box__title__locate 東京都
+-#   .main-index__box
+-#     .main-index__box__img
+-#     .main-index__box__title
+-#       .main-index__box__title__icon
+-#         = icon('fas', 'map-marker-alt',class: "mapicon")
+-#       .main-index__box__title__locate 北海道
+-#   .main-index__box
+-#     .main-index__box__img
+-#     .main-index__box__title
+-#       .main-index__box__title__icon
+-#         = icon('fas', 'map-marker-alt',class: "mapicon")
+-#       .main-index__box__title__locate 新潟県
+
+
+- @posts.each do |post|
+  %p= post.content
+  = image_tag("#{post.photos.first.image.url(:medium)}"
