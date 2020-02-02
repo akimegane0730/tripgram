@@ -1,11 +1,14 @@
-.post-showbox
-  -# = form_for @post do |f|
-  .post-showbox__img
-  .post-showbox__content
-    .post-showbox__content__name 投稿者
-    .post-showbox__content__text 綺麗だね！
-    .post-showbox__content__like いいね１０件
-    .post-showbox__content__box
-      .post-showbox__content__box__comment
-        .post-showbox__content__box__comment__name tarou
-        .post-showbox__content__box__comment__text いいですね！
+.post
+  .post__showbox
+    -#  = form_for @post do |f|
+    .post__showbox__img
+    .post__showbox__content
+      .post__showbox__content__name 
+        = "#{@user.nickname}"
+      .post__showbox__content__text
+        = "#{@post.content}"
+      .post__showbox__content__like いいね１０件
+      .post__showbox__content__box
+        .post__showbox__content__box__comment
+          .post__showbox__content__box__comment__name tarou
+          .post__showbox__content__box__comment__text いいですね！

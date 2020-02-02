@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # サインイン済みユーザーのみにアクセス許可をするdeviseが持ってるヘルパーメソッド
   before_action :authenticate_user!
   def index
-    @posts = Post.limit(10).includes(:photos, :user).order('created_at DESC')
+    @posts = Post.includes(:user).order('created_at DESC').limit(10)
   end
 
   def new
@@ -25,6 +25,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @photos = Photo.where(photo_id: @post.id)
+    @user = User.find(user_id: @post_id)
   end
 
   private
