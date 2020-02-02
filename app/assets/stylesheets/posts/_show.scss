@@ -1,33 +1,42 @@
-.post-showbox {
+.post {
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  background-color: lightgray;
+  margin-top: 50px;
+}
+
+.post__showbox {
   margin: 0 auto;
   width: 700px;
   height: 400px;
   display: flex;
-  margin-top: 30px;
+  padding-top: 50px;
+  
 }
 
-.post-showbox__img {
+.post__showbox__img {
   width: 400px;
   height: 400px;
   background-color: blue;
 }
 
-.post-showbox__content {
+.post__showbox__content {
   width: 300px;
   height: 400px;
 }
 
-.post-showbox__content__name {
+.post__showbox__content__name {
   text-align: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid black;
 }
 
-.post-showbox__content__text {
+.post__showbox__content__text {
   height: 160px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid black;
 }
 
-.post-showbox__content__like {
-  border-bottom: 1px solid lightgray;
+.post__showbox__content__like {
+  border-bottom: 1px solid black;
   text-align: center;
 }
